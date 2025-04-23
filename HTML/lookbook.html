@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XStore</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/layerslider.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,600,700|Montserrat:400,700|Roboto+Condensed:300i,400,400i,700|Palanquin:300,400,500,700|Roboto:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+<div class="fakeLoader"></div>
+<nav id="menu" class="menu slideout-menu">
+	<div class="search">
+		<a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+		<form>
+			<input type="text" value="" placeholder="Type here..." autocomplete="off" name="s">
+		</form>
+	</div>
+	<ul>
+		<li class="menu-parent">
+			<a href="#">Home<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<ul class="sub-menu">
+				<li class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Back</li>
+				<li><a href="index.html">Default</a></li>
+				<li><a href="#">Default</a></li>
+			</ul>
+		</li>
+		<li class="menu-parent">
+			<a href="#">Shop<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<ul class="sub-menu">
+				<li class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Back</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="my-account.html">My Account</a></li>
+				<li><a href="cart.html">Cart Page</a></li>
+				<li><a href="track-order.html">Track order</a></li>
+				<li><a href="shop.html">Shop Slideshow</a></li>
+				<li><a href="full-width-grid.html">Full Width Grid</a></li>
+				<li><a href="without-sidebar.html">Without sidebar</a></li>
+			</ul>
+		</li>
+		<li class="menu-parent">
+			<a href="#">Blog<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<ul class="sub-menu">
+				<li class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Back</li>
+				<li><a href="blog.html">blog</a></li>
+				<li><a href="blog-default.html">Post Default</a></li>
+				<li><a href="single-full-width.html">Full width image</a></li>
+				<li><a href="large-image.html">Large Image</a></li>
+			</ul>
+		</li>
+		<li class="menu-parent">
+			<a href="#">Portfolio<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<ul class="sub-menu">
+				<li class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Back</li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="portfolio-classic.html">Portfolio Classic</a></li>
+				<li><a href="portfolio.html">Portfolio With Titles</a></li>
+				<li><a href="portfolio-single.html">Portfolio Single</a></li>
+				<li><a href="portfolio-column-2.html">2 Columns Layout</a></li>
+			</ul>
+		</li>
+		<li class="menu-parent">
+			<a href="#">Pages featires<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<ul class="sub-menu">
+				<li class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Back</li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="about-us.html">About us</a></li>
+				<li><a href="headers.html">Headers</a></li>
+				<li><a href="lookbook.html">Lookbook</a></li>
+				<li><a href="faq.html">Faq</a></li>
+				<li><a href="team-members.html">Team Members</a></li>
+				<li><a href="single-members.html">Single Members</a></li>
+				<li><a href="instagram-wall.html">Instagram Wall</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Demos</a></li>
+		<li><a href="#">Buy!</a></li>
+	</ul>
+	<ul class="link">
+		<li><a href="#"><i class="fa fa-envelope-o"></i>Newsletter</a></li>
+		<li><a href="my-account.html">sign in</a></li>
+	</ul>
+	<ul class="social-icon">
+		<li><a href="https://www.facebook.com/8theme/" class="follow-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://twitter.com/8theme" class="follow-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/8theme_ltd/" class="follow-instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		<li><a href="https://plus.google.com/+8theme/posts" class="follow-google" target="_blank"><i class="fa fa-google"></i></a></li>
+		<li><a href="https://www.youtube.com/user/8theme/feed" class="follow-youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+	</ul>
+</nav>
+<main id="panel" class="panel">
+	<div class="et-full-screen-products">
+		<header id="header" class="header-overlap">
+			<div class="container-fluid">
+				<div class="header">
+					<div class="header-logo">
+						<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+					</div><!--header-logo-->
+					<div class="menu">
+						<menu>
+							<li class="active menu-parent-item"><a href="index.html">Home</a></li>
+							<li data-toggle="modal" data-target="#demo"><a href="#">Demos</a></li>
+							<li class="menu-parent-item">
+								<a href="shop.html">Shop</a>
+								<div class="nav-sublist-dropdown columns-3">
+									<ul>
+										<li><a href="#" class="title">Shop Layouts</a></li>
+										<li><a href="without-sidebar.html">Without sidebar</a></li>
+										<li><a href="right-sidebar.html">Right Sidebar</a></li>
+										<li><a href="shop.html">Shop Slideshow</a></li>
+										<li><a href="full-width-grid.html">Full Width Grid</a></li>
+										<li><a href="columns-2.html">2 columns</a></li>
+										<li><a href="shop.html">3 columns<span class="label-text sale">sale</span></a></li>
+										<li><a href="columns-4.html">4 columns</a></li>
+										<li><a href="columns-5.html">5 columns</a></li>
+										<li><a href="columns-6.html">6 columns</a></li>
+									</ul>
+									<ul>
+										<li><a href="#" class="title">Shop Styles</a></li>
+										<li><a href="catalog-mode.html">Catalog Mode<span class="label-text hot">hot</span></a></li>
+										<li><a href="product-hover-1.html">Product Hover 1<span class="label-text new">new</span></a></li>
+										<li><a href="catalog-mode.html">Product Hover 2 light</a></li>
+										<li><a href="product-hover-2-dark.html">Product Hover 2 Dark</a></li>
+										<li><a href="product-hover-3-light.html">Product Hover 3 Light</a></li>
+										<li><a href="product-hover-3-dark.html">Product Hover 3 Dark</a></li>
+										<li><a href="product-hover-4-light.html">Product Hover 4 Light</a></li>
+										<li><a href="product-hover-4-dark.html">Product Hover 4 Dark</a></li>
+									</ul>
+									<ul>
+										<li><a href="#" class="title">Product Page Layouts</a></li>
+										<li><a href="infinite-scroll.html">Infinite Scroll<span class="label-text new">new</span></a></li>
+										<li><a href="default-tabs.html">Default tabs design</a></li>
+										<li><a href="left-side-tabs.html">Left side tabs</a></li>
+										<li><a href="accordion-style-tabs.html">Accordion style tabs</a></li>
+										<li><a href="my-account.html">My Account</a></li>
+										<li><a href="track-order.html">Track order</a></li>
+										<li><a href="cart.html">Cart Page</a></li>
+										<li><a href="wishlist.html">Wishlist</a></li>
+									</ul>
+									<div class="images">
+										<div class="col">
+											<a href="#"><img src="http://placehold.it/400x215" alt="menu-banner"></a>
+										</div>
+										<div class="col">
+											<a href="#"><img src="http://placehold.it/400x215" alt="menu-banner"></a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menu-parent-item">
+								<a href="blog.html">Blog</a>
+								<div class="item-dropdown">
+									<ul>
+										<li class="nav-sublist">
+											<a href="#">Default Layout</a>
+											<ul class="menu-item-children">
+												<li><a href="blog.html">Right Sidebar</a></li>
+												<li><a href="blog-left.html">Left Sidebar</a></li>
+											</ul>
+										</li>
+										<li><a href="chess-blog.html">Chess Layout<span class="label-text hot">hot</span></a></li>
+										<li class="nav-sublist">
+											<a href="#">Grid Layout</a>
+											<ul class="menu-item-children">
+												<li><a href="blog-grid-2.html">2 Columns Grid</a></li>
+												<li><a href="blog-grid.html">3 Columns Grid</a></li>
+												<li><a href="blog-grid-4.html">4 Columns Grid</a></li>
+												<li><a href="blog-full-width.html">FullWidth Grid</a></li>
+											</ul>
+										</li>
+										<li><a href="centered-blog.html">Centered Layout</a></li>
+										<li><a href="blog-list.html">List Layout</a></li>
+										<li  class="nav-sublist">
+											<a href="single-blog.html">Single post</a>
+											<ul class="menu-item-children">
+												<li><a href="blog-default.html">Post Default</a></li>
+												<li><a href="single-full-width.html">Full width image</a></li>
+												<li><a href="large-image.html">Large Image</a></li>
+												<li><a href="blog-without-sidebar.html">Without sidebar</a></li>
+											</ul>
+										</li>
+										<li><a href="blog-timeline.html">Timeline Layout</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu-parent-item">
+								<a href="portfolio.html">Portfolio</a>
+								<div class="nav-sublist-dropdown columns-5">
+									<ul>
+										<li class="banner"><img src="http://placehold.it/270x240" alt="menu-banner6"></li>
+									</ul>
+									<ul>
+										<li><a href="#" class="title">Design Variants</a></li>
+										<li><a href="portfolio-single.html">Portfolio Single</a></li>
+										<li><a href="portfolio-classic.html">Portfolio Classic</a></li>
+										<li><a href="portfolio.html">Portfolio With Titles</a></li>
+										<li><a href="portfolio-full-width.html">Full width with titles</a></li>
+									</ul>
+									<ul>
+										<li><a href="#" class="title">Columns</a></li>
+										<li><a href="portfolio-column-2.html">2 Columns Layout</a></li>
+										<li><a href="portfolio-column-3.html">3 Columns Layout</a></li>
+										<li><a href="portfolio-column-4.html">4 Columns Layout</a></li>
+										<li><a href="portfolio-column-5.html">5 Columns Layout</a></li>
+										<li><a href="portfolio-column-6.html">6 Columns Layout</a></li>
+									</ul>
+									<ul class="project">
+										<li><a href="#" class="title">Portfolio project</a></li>
+										<li class="portfolio">
+											<img src="http://placehold.it/34x34" alt="img">
+											<a href="#">Consectetur aliquet</a>
+											<span>February 17, 2016</span>
+										</li>
+										<li class="portfolio">
+											<img src="http://placehold.it/34x34" alt="img2">
+											<a href="#">Consectetur aliquet</a>
+											<span>February 17, 2016</span>
+										</li>
+										<li class="portfolio">
+											<img src="http://placehold.it/34x34" alt="img3">
+											<a href="#">Consectetur aliquet</a>
+											<span>February 17, 2016</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu-parent-item">
+								<a href="blog.html">Pages featires</a>
+								<div class="item-dropdown">
+									<ul>
+										<li><a href="contact.html">Contact us</a></li>
+										<li><a href="about-us.html">About us</a></li>
+										<li><a href="headers.html">Headers</a></li>
+										<li><a href="lookbook.html">Lookbook</a></li>
+										<li><a href="faq.html">Faq</a></li>
+										<li><a href="team-members.html">Team Members</a></li>
+										<li><a href="single-members.html">Single Members</a></li>
+										<li><a href="parallax-presentation.html">Parallax Presentation</a></li>
+										<li><a href="instagram-wall.html">Instagram Wall</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Purchase</a></li>
+						</menu>
+					</div><!--menu-->
+					<div class="navbar-right">
+						<div class="inside">
+							<div class="header-search">
+								<a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+								<form>
+									<input type="text" value="" placeholder="Type here..." autocomplete="off" name="s">
+								</form>
+								<i class="close-search">x</i>
+							</div><!--header-search-->
+							<div class="wishlist">
+								<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							</div><!--wishlist-->
+							<div class="shopping-cart">
+								<a href="#">
+									<span class="cart-bag">
+										<i class="bag"></i>
+									</span>
+									<span class="total">$899.98</span>
+								</a>
+								<div class="cart-popup-container">
+									<p>Recently added item(s)</p>
+									<ul>
+										<li>
+											<a href="#" class="pull-left"><img src="http://placehold.it/60x80" alt="cart-img"></a>
+											<h4><a href="#">light man modern elegant suit</a></h4>
+											<span class="price">1 x $499,99</span>
+											<a href="#" class="remove">x</a>
+										</li>
+										<li>
+											<a href="#" class="pull-left"><img src="http://placehold.it/60x80" alt="cart-img"></a>
+											<h4><a href="#">light man modern elegant suit</a></h4>
+											<span class="price">1 x $499,99</span>
+											<a href="#" class="remove">x</a>
+										</li>
+									</ul>
+									<div class="cart-subtotal">
+										<span>cart sub-total: <span class="price">$899,98</span></span>
+									</div><!--cart-subtotal-->
+									<div class="buttons">
+										<a href="#" class="btn">checkout</a>
+										<a href="#" class="btn view-cart">view cart</a>
+									</div><!--buttons-->
+								</div><!--cart-popup-container-->
+							</div><!--shopping-cart-->
+							<button class="btn-hamburger js-slideout-toggle">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div><!--navbar-right-->
+				</div><!--header-->
+			</div>
+		</header>
+		<div class="et-products-images-slider swiper-container_q swiper-container-vertical">
+			<div class="swiper-wrapper">
+				<div class="et-product-image-slide swiper-slide swiper-no-swiping"></div>
+				<div class="et-product-image-slide swiper-slide swiper-no-swiping"></div>
+				<div class="et-product-image-slide swiper-slide swiper-no-swiping"></div>
+				<div class="et-product-image-slide swiper-slide swiper-no-swiping"></div>
+				<div class="et-product-image-slide swiper-slide swiper-no-swiping"></div>
+			</div>
+			<div class="et-products-navigation">
+				<div class="et-swiper-next">
+					<span class="swiper-nav-title">Contrasted collar jacket</span>
+					<span class="swiper-nav-price">325.00</span>
+					<span class="swiper-nav-arrow"></span>
+				</div>
+				<div class="et-swiper-prev">
+					<span class="swiper-nav-arrow"></span>
+					<span class="swiper-nav-title">Light weight jacket</span>
+					<span class="swiper-nav-price">325.00</span>
+				</div>
+			</div>
+		</div>
+		<div class="et-products-info-slider swiper-container_q swiper-container-vertical">
+			<div class="swiper-wrapper">
+				<div class="et-product-info-slide swiper-slide swiper-no-swiping">
+					<p class="product-title"><a href="#">Contrasted collar jacket</a></p>
+					<a href="#" class="products-cats">Jackets</a>
+					<div class="price">$540</div>
+					<p class="description">Adipiscing vestibulum a vestibulum commodo turpis sed parturient sit adipiscing a adipiscing vel faucibus non eros est senectus.Nam ornare proin a a nisl velit nostra vestibulum convallis dolor tellus quam condimentum gravida.</p>
+					<a href="#" class="btn add-to-cart">Add to cart</a>
+					<a href="#" class="wishlist btn">Add to Wishlist</a>
+					<span class="sku"><b>SKU:</b> 006212</span>
+					<ul class="social-icon">
+						<span>Share Social</span>
+						<li><a href="https://www.facebook.com/8theme/" class="follow-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/8theme" class="follow-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/8theme_ltd/" class="follow-instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://plus.google.com/+8theme/posts" class="follow-google" target="_blank"><i class="fa fa-google"></i></a></li>
+						<li><a href="https://www.youtube.com/user/8theme/feed" class="follow-youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="et-product-info-slide swiper-slide swiper-no-swiping">
+					<p class="product-title"><a href="#">Jersey padded jacket</a></p>
+					<a href="#" class="products-cats">Jackets</a>
+					<div class="price">$980</div>
+					<p class="description">Adipiscing vestibulum a vestibulum commodo turpis sed parturient sit adipiscing a adipiscing vel faucibus non eros est senectus.Nam ornare proin a a nisl velit nostra vestibulum convallis dolor tellus quam condimentum gravida.</p>
+					<a href="#" class="btn add-to-cart">Add to cart</a>
+					<a href="#" class="wishlist btn">Add to Wishlist</a>
+					<span class="sku"><b>SKU:</b> 006212</span>
+					<ul class="social-icon">
+						<span>Share Social</span>
+						<li><a href="https://www.facebook.com/8theme/" class="follow-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/8theme" class="follow-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/8theme_ltd/" class="follow-instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://plus.google.com/+8theme/posts" class="follow-google" target="_blank"><i class="fa fa-google"></i></a></li>
+						<li><a href="https://www.youtube.com/user/8theme/feed" class="follow-youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="et-product-info-slide swiper-slide swiper-no-swiping">
+					<p class="product-title"><a href="#">Light weight jacket</a></p>
+					<a href="#" class="products-cats">Jackets</a>
+					<div class="price">$560</div>
+					<p class="description">Adipiscing vestibulum a vestibulum commodo turpis sed parturient sit adipiscing a adipiscing vel faucibus non eros est senectus.Nam ornare proin a a nisl velit nostra vestibulum convallis dolor tellus quam condimentum gravida.</p>
+					<a href="#" class="btn add-to-cart">Add to cart</a>
+					<a href="#" class="wishlist btn">Add to Wishlist</a>
+					<span class="sku"><b>SKU:</b> 006212</span>
+					<ul class="social-icon">
+						<span>Share Social</span>
+						<li><a href="https://www.facebook.com/8theme/" class="follow-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/8theme" class="follow-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/8theme_ltd/" class="follow-instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://plus.google.com/+8theme/posts" class="follow-google" target="_blank"><i class="fa fa-google"></i></a></li>
+						<li><a href="https://www.youtube.com/user/8theme/feed" class="follow-youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="et-product-info-slide swiper-slide swiper-no-swiping">
+					<p class="product-title"><a href="#">Jersey padded jacket</a></p>
+					<a href="#" class="products-cats">Jackets</a>
+					<div class="price">$300</div>
+					<p class="description">Adipiscing vestibulum a vestibulum commodo turpis sed parturient sit adipiscing a adipiscing vel faucibus non eros est senectus.Nam ornare proin a a nisl velit nostra vestibulum convallis dolor tellus quam condimentum gravida.</p>
+					<a href="#" class="btn add-to-cart">Add to cart</a>
+					<a href="#" class="wishlist btn">Add to Wishlist</a>
+					<span class="sku"><b>SKU:</b> 006212</span>
+					<ul class="social-icon">
+						<span>Share Social</span>
+						<li><a href="https://www.facebook.com/8theme/" class="follow-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/8theme" class="follow-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/8theme_ltd/" class="follow-instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://plus.google.com/+8theme/posts" class="follow-google" target="_blank"><i class="fa fa-google"></i></a></li>
+						<li><a href="https://www.youtube.com/user/8theme/feed" class="follow-youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="et-product-info-slide swiper-slide swiper-no-swiping">
+					<p class="product-title"><a href="#">Jeans</a></p>
+					<a href="#" class="products-cats">Jackets</a>
+					<div class="price">$250</div>
+					<p class="description">Adipiscing vestibulum a vestibulum commodo turpis sed parturient sit adipiscing a adipiscing vel faucibus non eros est senectus.Nam ornare proin a a nisl velit nostra vestibulum convallis dolor tellus quam condimentum gravida.</p>
+					<a href="#" class="btn add-to-cart">Add to cart</a>
+					<a href="#" class="wishlist btn">Add to Wishlist</a>
+					<span class="sku"><b>SKU:</b> 006212</span>
+					<ul class="social-icon">
+						<span>Share Social</span>
+						<li><a href="https://www.facebook.com/8theme/" class="follow-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/8theme" class="follow-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/8theme_ltd/" class="follow-instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://plus.google.com/+8theme/posts" class="follow-google" target="_blank"><i class="fa fa-google"></i></a></li>
+						<li><a href="https://www.youtube.com/user/8theme/feed" class="follow-youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/fakeLoader.min.js"></script>
+<script type="text/javascript">
+$(".fakeLoader").fakeLoader({
+	timeToHide: 2000, 
+	zIndex: "9999999",
+	spinner: "spinner7",
+	bgColor: "#f5f5f5",
+});
+</script>
+<script type="text/javascript">
+	function changeImg1(source){  
+    	document.pict1.src = source + '.jpg';
+	};
+</script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/lib/slideout-min.js"></script>
+<script type="text/javascript" src="js/lib/greensock.js"></script>
+<script type="text/javascript" src="js/lib/layerslider.transitions.js"></script>
+<script type="text/javascript" src="js/lib/layerslider.kreaturamedia.jquery.js"></script>
+<script type="text/javascript" src="js/lib/paraxify.js"></script>
+<script type="text/javascript" src="js/lib/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.filterizr-min.js"></script>
+<script type="text/javascript" src="js/lib/swiper.min.js"></script>
+<script type="text/javascript" src="js/lib/TimeCircles-min.js"></script>
+<script type="text/javascript" src="js/lib/jquery-ui-min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
